@@ -1,8 +1,7 @@
-from .bf_rest_api import put_without_response
-from .bf_rest_api import get
-from .bf_rest_api import delete_without_response
-from .bf_rest_api import post_without_response
-from .bf_rest_api import post_with_response
+from .bf_rest_api import put_request
+from .bf_rest_api import get_request
+from .bf_rest_api import delete_request
+from .bf_rest_api import post_request
  
 from .bf_rest_api import HTTP_TKN_USER_AGENT
 from .bf_rest_api import HTTP_TKN_CONTENT_TYPE
