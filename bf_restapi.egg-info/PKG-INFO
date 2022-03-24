@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: bf-restapi
+Version: 1.0.0
+Summary: REST API functions Blue-Fez Ansible boilerplate module
+Home-page: UNKNOWN
+Author: 
+        Diederick de Buck
+        
+Author-email: 
+        diederick.de.buck@blue-fez.com
+        
+License: UNKNOWN
+Keywords: python,REST API,HTTP,HTTPS,Ansible,collection,module
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+A package that provides REST API functions Blue-Fez Ansible boilerplate module
+
