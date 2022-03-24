@@ -1,8 +1,0 @@
-setup.py
-bf_restapi/__init__.py
-bf_restapi/restapi.py
-bf_restapi.egg-info/PKG-INFO
-bf_restapi.egg-info/SOURCES.txt
-bf_restapi.egg-info/dependency_links.txt
-bf_restapi.egg-info/requires.txt
-bf_restapi.egg-info/top_level.txt
