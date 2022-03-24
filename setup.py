@@ -28,6 +28,6 @@ setup(
         "Programming Language :: Python",
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent"
-    ]
-    license_files = ('LICENSE.txt',)
+    ],
+    license_files = ('LICENSE.txt')
 )
