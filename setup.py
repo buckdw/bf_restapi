@@ -19,7 +19,7 @@ setup(
     long_description_content_type="text/markdown",
     long_description=LONG_DESCRIPTION,
     packages=find_packages(),
-    python_requires='>=3.6, <4',
+    python_requires='>=3.8',
     install_requires=['requests'],
     keywords=['python', 'REST API', 'HTTP', 'HTTPS', 'Ansible', 'collection', 'module'],
     classifiers=[
@@ -29,5 +29,6 @@ setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent"
     ],
-    license_files = ('LICENSE.txt')
+    license_files = ('LICENSE.txt'),
+    options=({'bdist_wheel':{'universal':True}})
 )
