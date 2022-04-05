@@ -14,7 +14,7 @@ class ContentType(enum.Enum):
     APP_HTML = 1
     APP_JSON = 2
     APP_XML = 3
-    APP_FORM_URL = 4
+    APP_URL_ENC = 4
 
 
 class EncodingType(enum.Enum):
@@ -27,6 +27,7 @@ def content_type(content_type):
         content_type.APP_HTML: 'application/html',
         content_type.APP_JSON: 'application/json',
         content_type.APP_XML: 'application/xml',
+        content_type.APP_URL_ENC: 'application/x-www-form-urlencoded'
     }.get(content_type, 'application/html')
 
 
@@ -65,7 +66,7 @@ def format_header(**kwargs):
             'agent': header_agent,
             'content_type': header_content_type,
             'encoding_type': header_encoding_type,
-            'authorization': header_authorization,
+            'authorization': header_authorization
         }
         http_header, http_value = methods[key](value)
         header[http_header] = http_value
