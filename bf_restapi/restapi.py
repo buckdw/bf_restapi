@@ -38,7 +38,6 @@ def encoding_type(encoding_type):
     }.get(encoding_type, '0')
 
 
-
 def header_agent(value):
     return HTTP_TKN_USER_AGENT, value
 
@@ -52,7 +51,7 @@ def header_encoding_type(value):
 
 
 def header_authorization(value):
-    return HTTP_TKN_USER_AGENT, value
+    return HTTP_TKN_AUTHORIZATION, value
 
 
 #
@@ -68,8 +67,9 @@ def format_header(**kwargs):
             'encoding_type': header_encoding_type,
             'authorization': header_authorization
         }
-        http_header, http_value = methods[key](value)
-        header[http_header] = http_value
+        if key in methods:
+            http_header, http_value = methods[key](value)
+            header[http_header] = http_value
     return header
 
 #
