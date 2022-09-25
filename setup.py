@@ -1,7 +1,7 @@
 from setuptools import setup
 from setuptools import find_packages
  
-VERSION = '1.1.0'
+VERSION = '1.2.0'
 DESCRIPTION = 'REST API functions Blue-Fez Ansible boilerplate module'
 LONG_DESCRIPTION = 'A package that provides REST API functions Blue-Fez Ansible boilerplate module'
  

@@ -1,3 +1,4 @@
+from socket import timeout
 import requests
 import enum
  
@@ -76,9 +77,9 @@ def format_header(**kwargs):
 #   post_request:
 #       creates post request with no response-buffer
 #
-def post_request(url, headers, payload, cacerts, valid_responses):
+def post_request(url, headers, payload, cacerts, valid_responses, timeout=None):
     try:
-        result = requests.post(url, data=payload, headers=headers, verify=cacerts)
+        result = requests.post(url, data=payload, headers=headers, verify=cacerts, timeout=timeout )
     except requests.exceptions.HTTPError:
         return False, result.json(), result.status_code
     except:
@@ -92,9 +93,9 @@ def post_request(url, headers, payload, cacerts, valid_responses):
 #   delete_request:
 #       creates delete request with no response-buffer
 #
-def delete_request(url, headers, cacerts, valid_responses):
+def delete_request(url, headers, cacerts, valid_responses, timeout=None):
     try:
-        result = requests.delete(url, headers=headers, verify=cacerts)
+        result = requests.delete(url, headers=headers, verify=cacerts, timeout=timeout)
     except requests.exceptions.HTTPError:
         return False, result.json(), result.status_code
     except:
@@ -107,9 +108,9 @@ def delete_request(url, headers, cacerts, valid_responses):
 #   get_request:
 #       creates get request with response-buffer
 #
-def get_request(url, headers, cacerts, valid_responses):
+def get_request(url, headers, cacerts, valid_responses, timeout=None):
     try:
-        result = requests.get(url, headers=headers, verify=cacerts)
+        result = requests.get(url, headers=headers, verify=cacerts, timeout=timeout)
     except requests.exceptions.HTTPError:
         return False, result.json(), result.status_code
     except:
@@ -124,9 +125,9 @@ def get_request(url, headers, cacerts, valid_responses):
 #   put_request:
 #       creates put request with no response-buffer
 #
-def put_request(url, headers, payload, cacerts, valid_responses):
+def put_request(url, headers, payload, cacerts, valid_responses, timeout=None):
     try:
-        result = requests.put(url, data=payload, headers=headers, verify=cacerts)
+        result = requests.put(url, data=payload, headers=headers, verify=cacerts, timeout=timeout)
     except requests.exceptions.HTTPError:
         return False, result.json(), result.status_code
     except:
