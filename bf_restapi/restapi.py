@@ -6,7 +6,7 @@ __author__ = 'Diederick de Buck'
 __version__ = '1.0'
 __date__ = "$Jan 29, 2019 10:02:13 PM$"
 __maintainer__ = 'Diederick de Buck'
-__email__ = 'diederick.de.buck@blue-fez.nl'
+__email__ = 'diederick.de.buck@esolutionssys.com'
 
 import requests
 import enum

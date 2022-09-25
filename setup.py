@@ -7,13 +7,13 @@ LONG_DESCRIPTION = 'A package that provides REST API functions Blue-Fez Ansible 
  
 # Setting up
 setup(
-    name="bf_restapi",
+    name="es_restapi",
     version=VERSION,
     author="""
         Diederick de Buck
         """,
     author_email="""
-        diederick.de.buck@blue-fez.com
+        diederick.de.buck@esolutionssys.com
         """,
     description=DESCRIPTION,
     long_description_content_type="text/markdown",
