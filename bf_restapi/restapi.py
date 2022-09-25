@@ -1,7 +1,17 @@
-from socket import timeout
+#
+#!/usr/bin/env python3
+#
+
+__author__ = 'Diederick de Buck'
+__version__ = '1.0'
+__date__ = "$Jan 29, 2019 10:02:13 PM$"
+__maintainer__ = 'Diederick de Buck'
+__email__ = 'diederick.de.buck@blue-fez.nl'
+
 import requests
 import enum
  
+from socket import timeout
 from requests.structures import CaseInsensitiveDict
 from http import HTTPStatus
 
